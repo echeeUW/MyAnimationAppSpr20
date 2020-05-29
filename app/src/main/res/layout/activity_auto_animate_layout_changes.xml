@@ -6,22 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".autoanimate.AutoAnimateLayoutChangesActivity"
+    android:animateLayoutChanges="true"
     android:padding="@dimen/paddingMedium"
+    android:id="@+id/container"
     >
 
     <View
-        android:id="@+id/vBox"
+        android:id="@+id/redBox"
         android:layout_width="@dimen/boxSize"
         android:layout_height="@dimen/boxSize"
         android:background="@color/red"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <View
-        android:id="@+id/vBox2"
+        android:id="@+id/blueBox"
         android:layout_width="@dimen/boxSize"
         android:layout_height="@dimen/boxSize"
         android:background="#00f"
-        app:layout_constraintLeft_toRightOf="@id/vBox"
+        app:layout_constraintLeft_toRightOf="@id/redBox"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
